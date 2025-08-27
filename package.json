@@ -1,0 +1,24 @@
+{
+  "name": "phandalin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "digital-garden build",
+    "deploy": "digital-garden deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SnibbelstM/Phandalin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SnibbelstM/Phandalin/issues"
+  },
+  "homepage": "https://github.com/SnibbelstM/Phandalin#readme",
+  "devDependencies": {
+    "digital-garden": "^0.2.0"
+  }
+}
