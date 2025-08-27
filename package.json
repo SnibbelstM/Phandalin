@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "digital-garden build",
-    "deploy": "digital-garden deploy"
+    "build": "npx digital-garden build",
+    "deploy": "npx digital-garden deploy"
   },
   "repository": {
     "type": "git",
