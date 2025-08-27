@@ -8,10 +8,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -22,9 +20,9 @@ jobs:
         run: npm install
 
       - name: Build Digital Garden
-        run: npx digital-garden build
+        run: npm run build
 
       - name: Deploy Digital Garden
-        run: npx digital-garden deploy
+        run: npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
