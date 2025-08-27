@@ -1,24 +1,15 @@
 {
   "name": "phandalin",
   "version": "1.0.0",
-  "description": "",
+  "description": "Digital Garden für Phandalin",
   "main": "index.js",
   "scripts": {
-    "build": "npx digital-garden build",
-    "deploy": "npx digital-garden deploy"
+    "build": "digital-garden build",
+    "deploy": "digital-garden deploy"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SnibbelstM/Phandalin.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SnibbelstM/Phandalin/issues"
-  },
-  "homepage": "https://github.com/SnibbelstM/Phandalin#readme",
   "devDependencies": {
-    "digital-garden": "^0.2.0"
-  }
+    "digital-garden": "^1.0.0"
+  },
+  "author": "SnibbelstM",
+  "license": "MIT"
 }

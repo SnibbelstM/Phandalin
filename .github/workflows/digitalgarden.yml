@@ -3,26 +3,32 @@ name: Digital Garden Deployment
 on:
   push:
     branches:
-      - main
+      - main  # Default-Branch deines Repos
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
+      # 1. Repository auschecken
       - uses: actions/checkout@v3
 
+      # 2. Node.js einrichten
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '18'  # Digital Garden empfiehlt Node 18+
 
-      - name: Install dependencies
-        run: npm install
+      # 3. Digital Garden CLI global installieren
+      - name: Install Digital Garden globally
+        run: npm install -g digital-garden
 
+      # 4. Build Digital Garden
       - name: Build Digital Garden
-        run: npm run build
+        run: digital-garden build
 
+      # 5. Deploy Digital Garden
       - name: Deploy Digital Garden
-        run: npm run deploy
+        run: digital-garden deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
