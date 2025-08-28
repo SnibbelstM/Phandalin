@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/world/schwertkueste/phandalin/00-phandalin-spieler/"}
 ---
 
-
+d
 ![Phandalin.png](/img/user/z-Anh%C3%A4nge/Images/Phandalin.png)
 
 
