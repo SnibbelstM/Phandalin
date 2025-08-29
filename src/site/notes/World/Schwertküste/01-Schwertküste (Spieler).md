@@ -25,4 +25,3 @@ scale: 0.0604838709677419
 darkMode: false
 ```
 
-d
